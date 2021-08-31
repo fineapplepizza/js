@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button onclick="req()">영화정보 받아오기</button>
+
+    <script>
+        function req(){
+            $.ajax({ //객체형태로 한번에 불러올꺼야 {}, 객체이기 때문에 콤마로 구분
+                url : "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=64a32367217ab2c0eb5a3ef1cf089630&targetDt=20210606",
+                type : "get",
+                success : function(res){
+                 console.log(res.boxOfficeResult.weeklyBoxOfficeList[0].movieNm);
+                },
+                error : function(){
+                    alert("실패입니다.");
+                }
+            
+            
+            });
+        }
+    </script>
+</body>
+</html>

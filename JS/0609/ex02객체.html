@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let person = {
+            name : "정형",
+            age : 20,
+            skill : function(){ //키값이 함수명 대체 
+                 alert("에어컨틀어주세요!");
+            }
+        }
+        
+        person.gender = "남자"; //key와 value 추가 
+        
+        document.write(person.name); //HTML에 출력
+
+        person.skill(); //함수를 가졌기때문에 소괄호를 써줘야함
+    </script>
+
+</body>
+</html>

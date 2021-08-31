@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <h1>우리모두 취업합시다!</h1>
+    <h1>추가한 h1</h1>
+
+    <script>
+
+        $("h1").on("mouseover",function(){
+            //내가 가리키는 주체 자체를 this 
+            //내가 이벤트를 지칭한 선택자 
+             $(this).css("color","yellow");
+        })
+    </script>
+
+</body>
+</html>

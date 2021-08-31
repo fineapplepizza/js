@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        body{
+            background-color: yellow;
+            color: blue;
+        }
+    </style> -->
+
+</head>
+<body id="body1">
+
+    <a href="#"><h1>Font-end Developer</h1></a>
+    <br><br>
+    <button id="btn1">디자인</button> <button id="btn2">디폴트</button>
+    <br>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <h2>Javascript</h2>
+    <p>Javascript는 웹 페이지를 동적인 페이지로 만들기 위해 고안된 언어입니다.<br>
+        차근차근 Javascript에 대해서 배워보도록 합시다.
+    </p>
+
+    <!-- btn1이라는 ID를 가진 버튼을 클릭했을 때! 배경색은 노란색, 글자색은 파란색 변경!-->
+    <script>
+         //자바스크립트 코드를 작성하는 공간!
+         // 페이지에 모든 정보를 가지고 있는 것이 document
+        //내가 보는 문서에서 가져다줘 어떤요소를 아이디를 통해서 그리고 그 버튼에 이벤트를 붙일꺼야
+        //클릭했을때 함수를 실행해줘
+        document.getElementById("btn1").addEventListener("click",function(){
+            //배경색은 노락색, 글자색은 파란색 변경!
+        // 문서에서 바디태그를 가지고와줘그리고 스타일바꿀겁니다. 배경색을 노란색으로 바꿀겁니다.
+            document.getElementById("body1").style.backgroundColor = "yellow";
+        //문서에서 바디태그를 가져워줘 그리고 스타일로 글자색을 파란색으로 바꿔줘
+            document.getElementById("body1").style.color="blue";
+        })
+
+    </script>
+
+</body>
+</html>

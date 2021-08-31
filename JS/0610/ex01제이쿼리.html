@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--외부방식-효율적이고 유지보수가 뛰어남 -->
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <h1>임시완 잘생겼나요~</h1>
+
+    <script>
+        //h1을 제이쿼리로 가져와줘html을 불러와줘
+        //태그내의 컨텐츠를 가지고올때는 .html() / .text()
+        console.log($("h1").html());
+
+        // $("h1").html("<span>정말 잘생겼어요~</span>");
+          $("h1").text("<span>정말 잘생겼어요~</span>");
+        //  $("h1").css('color','yellow');
+        //  $("h1").css('font-size','50px');
+        //  $('h1').css('background-color','black');
+
+         // 다중스타일 처리
+         $("h1").css({
+             color : "yellow",
+             fontSize : "50px",
+             backgroundColor : "black"
+
+         });
+    </script>
+
+</body>
+</html>

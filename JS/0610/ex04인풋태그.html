@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <input type="text">
+    <br>
+    <input type="password">
+    <br>
+    <input type="radio">
+    <br>
+    <input type="checkbox">
+
+    <script>
+        //input태그에 속성[]값을 명시 
+        //안에있는 글자를 가지고 올때 val
+        $("input[type=password]").val("추가한데이터");
+        //체크값 속성에 접급할려면 attr
+        //속성값중에 체크값을 true로 바꿔주세요
+        $("input[type=radio]").attr("checked",true)
+
+    </script>
+</body>
+</html>

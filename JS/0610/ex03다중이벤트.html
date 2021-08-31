@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>다중 이벤트 처리!</h1>
+
+    <script>
+        //on 그룹이벤트 여러개의 이벤트를 등록할 때 사용
+        //객체형태로 내가 필요한 키값과 벨류값을 함수로 담아서 만들 수 있다.
+        //h1태그에 클릭을 했을때 배경: 핑/글자: 흰
+        //h1태그에 마우스를 올렸을 때 배경 : 초록 / 글자: 흰
+        $('h1').on({
+
+            'click' : function(){
+                $("h1").css('color','white')
+                $('body').css('background-color','pink');
+            },
+            'mouseover' : function(){
+                $("h1").css('color','white')
+                $('body').css('background-color','green');
+
+                
+
+            }
+        })
+
+    </script>
+</body>
+</html>
